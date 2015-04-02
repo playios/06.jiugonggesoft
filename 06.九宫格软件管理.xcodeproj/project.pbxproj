@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891EA0651ACCEFD9006B3B62 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = 891EA0641ACCEFD9006B3B62 /* app.plist */; };
+		893920EE1AC852BC00FD36DC /* DYAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 893920ED1AC852BC00FD36DC /* DYAppInfo.m */; };
 		8952B0E31AC7F66600E93478 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952B0E21AC7F66600E93478 /* Foundation.framework */; };
 		8952B0E51AC7F66600E93478 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952B0E41AC7F66600E93478 /* CoreGraphics.framework */; };
 		8952B0E71AC7F66600E93478 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8952B0E61AC7F66600E93478 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		891EA0641ACCEFD9006B3B62 /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = app.plist; path = ../app.plist; sourceTree = "<group>"; };
+		893920EC1AC852BC00FD36DC /* DYAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYAppInfo.h; sourceTree = "<group>"; };
+		893920ED1AC852BC00FD36DC /* DYAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYAppInfo.m; sourceTree = "<group>"; };
 		8952B0DF1AC7F66600E93478 /* 06.九宫格软件管理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06.九宫格软件管理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8952B0E21AC7F66600E93478 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8952B0E41AC7F66600E93478 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +87,8 @@
 		8952B0D61AC7F66600E93478 = {
 			isa = PBXGroup;
 			children = (
+				893920EC1AC852BC00FD36DC /* DYAppInfo.h */,
+				893920ED1AC852BC00FD36DC /* DYAppInfo.m */,
 				8952B0E81AC7F66600E93478 /* 06.九宫格软件管理 */,
 				8952B1071AC7F66600E93478 /* 06.九宫格软件管理Tests */,
 				8952B0E11AC7F66600E93478 /* Frameworks */,
@@ -118,6 +125,7 @@
 				8952B0F71AC7F66600E93478 /* DYViewController.h */,
 				8952B0F81AC7F66600E93478 /* DYViewController.m */,
 				8952B0FA1AC7F66600E93478 /* Images.xcassets */,
+				891EA0641ACCEFD9006B3B62 /* app.plist */,
 				8952B0E91AC7F66600E93478 /* Supporting Files */,
 			);
 			path = "06.九宫格软件管理";
@@ -229,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891EA0651ACCEFD9006B3B62 /* app.plist in Resources */,
 				8952B0FB1AC7F66600E93478 /* Images.xcassets in Resources */,
 				8952B0ED1AC7F66600E93478 /* InfoPlist.strings in Resources */,
 				8952B0F61AC7F66600E93478 /* Main.storyboard in Resources */,
@@ -250,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893920EE1AC852BC00FD36DC /* DYAppInfo.m in Sources */,
 				8952B0EF1AC7F66600E93478 /* main.m in Sources */,
 				8952B0F91AC7F66600E93478 /* DYViewController.m in Sources */,
 				8952B0F31AC7F66600E93478 /* DYAppDelegate.m in Sources */,
@@ -457,6 +467,7 @@
 				8952B1131AC7F66600E93478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8952B1141AC7F66600E93478 /* Build configuration list for PBXNativeTarget "06.九宫格软件管理Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +476,7 @@
 				8952B1161AC7F66600E93478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
