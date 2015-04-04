@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class DYAppInfo;
 @interface DYAppView : UIView
-@property (weak, nonatomic) IBOutlet UIImageView *iconVIew;
-@property (weak, nonatomic) IBOutlet UILabel *lable;
-@property (weak, nonatomic) IBOutlet UIButton *button;
 
++(instancetype)appView;
+
+@property(nonatomic,strong) DYAppInfo *appInfo;
 @end

@@ -29,7 +29,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="button:" destination="6BP-a5-khr" eventType="touchUpInside" id="PKG-8X-xpd"/>
+                        <action selector="click:" destination="6BP-a5-khr" eventType="touchUpInside" id="Dmo-zF-R5I"/>
                     </connections>
                 </button>
             </subviews>
@@ -37,7 +37,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="button" destination="1cB-gg-jmP" id="A8P-go-e7W"/>
-                <outlet property="iconVIew" destination="5n5-wz-v5T" id="Sg0-L6-juO"/>
+                <outlet property="iconView" destination="5n5-wz-v5T" id="PNw-wC-U5v"/>
                 <outlet property="lable" destination="2iE-Lf-KVd" id="eVS-Ui-yYg"/>
             </connections>
         </view>

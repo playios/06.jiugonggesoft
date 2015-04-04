@@ -35,35 +35,33 @@
         CGFloat x=marginX+(marginX+kAppViewW)*(i%kAppCount);
         CGFloat y=kStartY + marginY+(marginY+kAppViewH)*(i/kAppCount);
 //        UIView *appView=[[UIView alloc]initWithFrame:CGRectMake(x, y, kAppViewW, kAppViewH)];
-        DYAppView *appView=[[[NSBundle mainBundle]loadNibNamed:@"DYAppView" owner:nil options:nil]lastObject];
+        DYAppView *appView=[DYAppView appView];
         appView.frame=CGRectMake(x, y, kAppViewW, kAppViewH);
         //        appView.backgroundColor=[UIColor redColor];
         [self.view addSubview:appView];
         
         DYAppInfo *appInfo=self.appList[i];
         
+        appView.appInfo=appInfo;
+        
+//        UIImageView *icon= appView.iconView;
+//        icon.image=appInfo.image;
+//        
+//        UILabel *lable=appView.lable;
+//        lable.text=appInfo.name;
+//       
         
         
-        UIImageView *icon= appView.iconVIew;
-        icon.image=appInfo.image;
-        
-        UILabel *lable=appView.lable;
-        lable.text=appInfo.name;
-       
-        
-        
-        UIButton *button= appView.button;
-        
-       
-        button.tag=1;
-        [button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchDragInside];
+//        UIButton *button= appView.button;
+//        
+//       
+//        button.tag=1;
+//        [button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchDragInside];
         
     }
 	// Do any additional setup after loading the view, typically from a nib.
 }
--(void)click:(UIButton *)button{
-    NSLog(@"x");
-}
+
 
 - (void)didReceiveMemoryWarning
 {
